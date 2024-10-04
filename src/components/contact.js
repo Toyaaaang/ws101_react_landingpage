@@ -1,5 +1,9 @@
 import React from "react";
 import "./main.css";
+import email from "./assets/Image/Email Icon.png";
+import fb from"./assets/Image/fbicon.png";
+import ig from "./assets/Image/ig-icon.png";
+import msgr from "./assets/Image/mesgr-icon.png";
 
 const Contact = () => {
     return (
@@ -12,25 +16,25 @@ const Contact = () => {
                     <h3>Social Media</h3>
                     <ul>
                         <li>
-                            <img src="images/mesgr-icon.png" alt="Messenger" />
+                            <img src={msgr} alt="Messenger" />
                             <div className="social-info">
                                 <p><a href="https://www.facebook.com/jomari.estoya?mibextid=ZbWKwLwL" target="_blank" rel="noopener noreferrer">John Estoya</a></p>
                             </div>
                         </li>
                         <li>
-                            <img src="images/ig-icon.png" alt="Instagram" />
+                            <img src={ig} alt="Instagram" />
                             <div className="social-info">
                                 <p><a href="https://www.instagram.com/jhn_estoya?igsh=MXRkb3JvMnZ1NG90Nw==" target="_blank" rel="noopener noreferrer">@jhn_estoya</a></p>
                             </div>
                         </li>
                         <li>
-                            <img src="images/fbicon.png" alt="Facebook" />
+                            <img src={fb} alt="Facebook" />
                             <div className="social-info">
                                 <p><a href="https://www.facebook.com/jomari.estoya?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">John Estoya</a></p>
                             </div>
                         </li>
                         <li>
-                            <img src="images/Email Icon.png" alt="Email" />
+                            <img src={email} alt="Email" />
                             <div className="social-info">
                                 <p><a href="https://www.youtube.com/@SDPTSolutions" target="_blank" rel="noopener noreferrer">Visit: YouTube</a></p>
                             </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './main.css'; 
 import { Link } from 'react-router-dom';
+import avatar from './assets/Image/avatar.png';
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
             </div>
         </div>
         <div className="profile">
-            <img src="./Images/avatar.png" alt="WEBSITE" />
+            <img src={avatar} alt="WEBSITE" />
         </div>
     </section>
 );

@@ -1,6 +1,7 @@
 import React from "react";
 import "./main.css";
 import { Link } from "react-router-dom";
+import hero from './assets/Image/hero.png'
 
 const Nav =() =>{
     return(
@@ -10,7 +11,7 @@ const Nav =() =>{
             <span></span>
         </label>
         <nav>
-            <ul><li><img className="hero" src="images/hero.png" alt="Hero"/></li>
+            <ul><li><img className="hero" src={hero} alt="Hero"/></li>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/courses">Courses</Link></li>

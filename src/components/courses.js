@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./main.css";
-
+import htmls from './assets/Image/html.png';
+import css from './assets/Image/css.png';
+import js from  './assets/Image/js.png';
 const Courses = () => {
     const [activeCourse, setActiveCourse] = useState(null);
 
@@ -16,7 +18,7 @@ const Courses = () => {
             <div className="experience-container">
                 {/* HTML Course */}
                 <div className={`experience ${activeCourse === 'html' ? 'active' : ''}`} onClick={() => toggleCourse('html')}>
-                    <img src="images/html.png" alt="HTML" />
+                    <img src={htmls} alt="HTML" />
                     <h3>Hypertext Mark-up Language</h3>
                     <div className="experience-content">
                         <p>
@@ -29,7 +31,7 @@ const Courses = () => {
 
                 {/* CSS Course */}
                 <div className={`experience ${activeCourse === 'css' ? 'active' : ''}`} onClick={() => toggleCourse('css')}>
-                    <img src="images/css.png" alt="CSS" />
+                    <img src={css} alt="CSS" />
                     <h3>Cascading Style Sheet</h3>
                     <div className="experience-content">
                         <p>
@@ -41,7 +43,7 @@ const Courses = () => {
 
                 {/* JavaScript Course */}
                 <div className={`experience ${activeCourse === 'js' ? 'active' : ''}`} onClick={() => toggleCourse('js')}>
-                    <img src="images/js.png" alt="JavaScript" />
+                    <img src={js} alt="JavaScript" />
                     <h3>JavaScript</h3>
                     <div className="experience-content">
                         <p>
